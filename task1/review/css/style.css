@@ -1,0 +1,242 @@
+/*----------------------
+
+  Content:
+    1.Fonts
+    2.Typography
+    3.Tabs
+    
+    
+-----------------------*/
+
+
+/*-------------------------------------------------------*/
+/* 1.Fonts
+/*-------------------------------------------------------*/
+
+@font-face {
+	font-family: "IRANYekan";
+	src: url('../fonts/IRANYekan.eot');
+	src: url('../fonts/IRANYekan.eot?#iefix') format('embedded-opentype'), url('../fonts/IRANYekan.woff') format('woff'), url('../fonts/IRANYekan.ttf') format('truetype');
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "Kalameh";
+	src: url('../fonts/Kalameh Bold.eot');
+	src: url('../fonts/Kalameh Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/Kalameh Bold.woff') format('woff'), url('../fonts/Kalameh Bold.ttf') format('truetype');
+	font-weight: normal;
+}
+
+
+/*-------------------------------------------------------*/
+/* 2.Typography
+/*-------------------------------------------------------*/
+
+body {
+	font-family: IRANYekan;
+	overflow-x: hidden;
+}
+
+.align-direction {
+	direction: rtl;
+	text-align: right;
+}
+
+.right-dir {
+	direction: rtl;
+}
+
+.h4 {
+	font-size: 28px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.29;
+	letter-spacing: 0.18px;
+	color: #222222;
+	margin-bottom: 40px;
+}
+
+.h5 {
+	font-size: 18px;
+	font-weight: 600;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.44;
+	letter-spacing: 0.11px;
+	color: #222222;
+}
+
+.h6 {
+	font-size: 15px;
+	font-weight: 600;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.67;
+	letter-spacing: 0.09px;
+	color: #222222;
+}
+
+p {
+	font-size: 18px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.44;
+	letter-spacing: 0.11px;
+	color: #49545d;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+}
+
+
+
+/*-------------------------------------------------------*/
+/* 3.Tabs
+/*-------------------------------------------------------*/
+#home {
+	background: #F3F3F7;
+}
+.right-dir{
+	direction:rtl;
+}
+
+.tabs-bottom{
+	position: fixed;
+    bottom: 0;
+    padding: 10px;
+    background: #fff;
+    border-top: 1px solid #eee;
+	box-shadow: 1px 1px 10px #eee;
+	color: #787878;
+	max-height: 100px;
+	
+}
+.my-100{
+	margin-bottom: 100px;
+	margin-top: 55px;
+}
+.tabs .tabs-bottom span{
+	font-size: 12px;
+	font-weight: 700;
+}
+.tabs .tabs-bottom span a{
+	color: #787878;
+	text-decoration: none;
+}
+
+.tabs-bottom .tabs-icon.active,.tabs-bottom .tabs-icon:active,.tabs-top i:active{
+	color: #007bff;
+}
+.tabs-bottom .tabs-icon.active a,.tabs-bottom .tabs-icon:active a,.tabs-top i:active{
+	color: #007bff;
+}
+
+.tabs-bottom .fa::before,.tabs-top .fa::before{
+	font-size: 23px;
+}
+.tabs-top{
+	position: fixed;
+    top: 0;
+    padding: 17px;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+	box-shadow: 1px 1px 10px #eee;
+	color: #333;
+	z-index:999;
+}
+.tabs-top .tabs-title i{
+    position: absolute;
+    right: 17px;
+    top: -1px;
+}
+.tabs-title h6{
+	font-weight: 700;
+	font-size: 15px;
+}
+.logo-icon{
+	width: 20%;
+	border-radius:50%;
+}
+.like-icon{
+	color: #D7443E;
+}
+.back-icon{
+	color: #333;
+}
+.rate .checked{
+	color: #0063F7;
+}
+.rate span{
+	font-size: 20px;
+}
+.rate-detail span{
+	font-size: 18px;
+	font-weight: 600;
+	color: #333;
+}
+
+.tab {
+	overflow: hidden;
+	display: flex;
+	width: 100%;
+  }
+  
+
+  .tab button {
+	
+	background-color: inherit;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 14px 16px;
+	transition: 0.3s;
+	font-size: 17px;
+  }
+  .tablink{
+	  position: relative;
+  }
+  .tab button.active:after{
+	content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 17px solid transparent;
+    border-right: 17px solid transparent;
+    border-top: 18px solid #F3F3F7;
+    top: 51%;
+    right: 20%;
+  }
+  
+  .tab .tablinks1.active:after{
+	content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 17px solid transparent;
+    border-right: 17px solid transparent;
+    border-top: 18px solid #F3F3F7;
+	top: 51%;
+	right:unset;
+	left: 21%;
+}
+
+  .tabcontent {
+	display: none;
+	padding: 6px 12px;
+	background: #fff;
+
+  }
+  .tabcontent a{
+	font-weight: 500;
+	font-size: 14px;
+	padding: 10px 30px;
+  }
+  .tablinks img{
+	width: 30%;
+    display: block;
+    margin: auto;
+  }
