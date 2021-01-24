@@ -45,7 +45,9 @@ body {
 .right-dir {
 	direction: rtl;
 }
-
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6,.btn{
+	font-family: IRANYekan;
+}
 .h4 {
 	font-size: 28px;
 	font-weight: normal;
@@ -115,8 +117,7 @@ ul {
 	max-height: 100px;
 	
 }
-.my-100{
-	margin-bottom: 100px;
+.mb-100{
 	margin-top: 55px;
 }
 .tabs .tabs-bottom span{
@@ -207,7 +208,7 @@ ul {
     border-left: 17px solid transparent;
     border-right: 17px solid transparent;
     border-top: 18px solid #F3F3F7;
-    top: 51%;
+    top: 19.8%;
     right: 20%;
   }
   
@@ -219,7 +220,7 @@ ul {
     border-left: 17px solid transparent;
     border-right: 17px solid transparent;
     border-top: 18px solid #F3F3F7;
-	top: 51%;
+	top: 19.8%;
 	right:unset;
 	left: 21%;
 }
@@ -227,10 +228,10 @@ ul {
   .tabcontent {
 	display: none;
 	padding: 6px 12px;
-	background: #fff;
+	background: #f9f9f9;
 
   }
-  .tabcontent a{
+  .tabcontent a.btn{
 	font-weight: 500;
 	font-size: 14px;
 	padding: 10px 30px;
@@ -240,3 +241,37 @@ ul {
     display: block;
     margin: auto;
   }
+    .tabcontent .form-control{
+	  border:none;
+	  padding: 0;
+	  font-size: 1.2rem;
+	  font-weight: 600;
+	  background: transparent;
+  }
+    .tabcontent .form-control:focus{
+	  box-shadow: none;
+  }
+    .tabcontent .form-control option{
+	  font-size: 11px;
+  }
+    .tabcontent p{
+	font-size: 12px;
+	font-weight: 700;
+	color: #222;
+  }
+    .tabcontent h6{
+	font-weight: 700;
+	color: #222;
+  }
+  
+  .link-icon img{
+	  width: 22%;
+  }
+ 
+  span.date{
+	  font-size: 12px;
+  }
+.reply-com{
+	border:1px solid #222;
+	background:#fff;
+}
