@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>نظرتو</title>
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/all.min.css">
+      <link rel="stylesheet" href="css/shards.min.css">
+      <link rel="stylesheet" href="css/shards-demo.min.css">
+      <link rel="stylesheet" href="css/style.css">
+      
+   </head>
+   <body class="wrapper">
+      
+      <div class="container-fluid mb-100 px-0" id="home">
+        <div class="row justify-content-center tabs align-content-center mx-0">
+          <div class="col-12 text-center px-0 tabs-top">
+              <div class="tabs-title">
+                <h1 class="mb-0 title">نظرتو</h1>
+                <h5 class="mb-0">نظر خودت رو بنویس</h5>
+              </div>
+            </div>
+        </div>
+        
+        <div class="row mx-0 pt-4 text-right right-dir">
+          <div class="col-12 main px-0">
+            <h5 class="px-4">اسم کسب و کار مورد نظرات رو بنویس</h5>
+            <p class="mb-2 px-4">لینک وب سایت مورد نظر یا ایدی پیج مورد نظرتون رو وارد کنید</p>
+            <form class="px-4 mb-4">
+              <div class="form-group">
+                <input type="text" class="form-control">
+              </div>
+            </form>
+          </div>
+          <div class="col-12 main main-rate px-0">
+            <h5 class="px-4 mt-4">چه امتیازی بهشون میدی</h5>
+          </div>
+          <div class="col-12 main main-rate px-0">
+            <h5 class="px-4 mt-4">کمی در مورد تجربتون به ما بگید</h5>
+            <p class="mb-2 px-4">اینجا میتونیید با جزئیات نظرتون رو با ما و بقیه در میون بزارید</p>
+            <form class="px-4 mb-4">
+              <div class="form-group">
+                <textarea class="form-control" rows="6"></textarea>
+                <input type="text" class="form-control mt-3 upload-pic" placeholder="اضافه کردن عکس به نظرم">
+                <i class="fa fa-plus plus-icon"></i>
+              </div>
+            </form>
+          </div>
+          <div class="col-12 main main-rate px-0">
+            <h5 class="px-4 mt-4">اسم کسب و کار مورد نظرات رو بنویس</h5>
+            <p class="mb-2 px-4">لینک وب سایت مورد نظر یا ایدی پیج مورد نظرتون رو وارد کنید</p>
+            <form class="px-4 mb-4">
+              <div class="form-group">
+                <input type="text" class="form-control">
+              </div>
+            </form>
+            <div class="text-center mt-4">
+              <button class="btn btn-primary btn-nazar text-center" type="submit">ثبت نظر</button>
+            </div>
+            
+          </div>
+          
+          
+        </div>
+          
+          
+         
+            
+         </div>
+      </div>
+      
+      
+      <script src="js/jquery-3.4.1.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/shards.min.js"></script>
+      <script src="js/demo.min.js"></script>
+      <script>
+        function openCity(evt, cityName) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+          document.getElementById(cityName).style.display = "block";
+          evt.currentTarget.className += " active";
+        }
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+        </script>
+
+   </body>
+</html>
