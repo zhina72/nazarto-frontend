@@ -27,12 +27,20 @@
         <div class="row mx-0 pt-4 text-right right-dir">
           <div class="col-12 main px-0">
             <h5 class="px-4">اسم کسب و کار مورد نظرات رو بنویس</h5>
-            <p class="mb-2 px-4">لینک وب سایت مورد نظر یا ایدی پیج مورد نظرتون رو وارد کنید</p>
-            <form class="px-4 mb-4">
+            
+            <form id="nazar-form" class="px-4 mb-4" action="" method="POST">
               <div class="form-group">
-                <input type="text" class="form-control">
+                <label id="linkpage" class="label-error mb-2">لینک وب سایت مورد نظر یا ایدی پیج مورد نظرتون رو وارد کنید</label>
+            
+          
+
+                <div id="datalist">
+                  <input id="datalist-input" type="text" class="form-control linkpage" id="linkpage" required>
+                  <ul id="datalist-ul" class="px-2"></ul>
+                </div>
               </div>
-            </form>
+             
+             
           </div>
           <div class="col-12 main main-rate px-0">
             <h5 class="px-4 mt-4">چه امتیازی بهشون میدی</h5>
@@ -40,26 +48,30 @@
           <div class="col-12 main main-rate px-0">
             <h5 class="px-4 mt-4">کمی در مورد تجربتون به ما بگید</h5>
             <p class="mb-2 px-4">اینجا میتونیید با جزئیات نظرتون رو با ما و بقیه در میون بزارید</p>
-            <form class="px-4 mb-4">
-              <div class="form-group">
+          
+              <div class="form-group px-4">
                 <textarea class="form-control" rows="6"></textarea>
-                <input type="text" class="form-control mt-3 upload-pic" placeholder="اضافه کردن عکس به نظرم">
-                <i class="fa fa-plus plus-icon"></i>
+                <div class="custom-file right-dir mt-4">
+                  <input type="file" id="files" name="files[]" multiple required class="form-control mt-3 upload-pic custom-file-input" required>
+                 
+                  <label class="custom-file-label my-0" for="files">اضافه کردن عکس به نظرم</label>
+                </div>
+               
               </div>
-            </form>
+          
           </div>
           <div class="col-12 main main-rate px-0">
             <h5 class="px-4 mt-4">اسم کسب و کار مورد نظرات رو بنویس</h5>
             <p class="mb-2 px-4">لینک وب سایت مورد نظر یا ایدی پیج مورد نظرتون رو وارد کنید</p>
-            <form class="px-4 mb-4">
-              <div class="form-group">
+          
+              <div class="form-group px-4">
                 <input type="text" class="form-control">
               </div>
-            </form>
+         
             <div class="text-center mt-4">
               <button class="btn btn-primary btn-nazar text-center" type="submit">ثبت نظر</button>
             </div>
-            
+          </form>
           </div>
           
           
@@ -73,6 +85,7 @@
       
       
       <script src="js/jquery-3.4.1.min.js"></script>
+      <script src="js/jquery.validate.min.js"></script>
       <script src="js/bootstrap.min.js"></script>
       <script src="js/shards.min.js"></script>
       <script src="js/demo.min.js"></script>
@@ -92,7 +105,122 @@
         }
         // Get the element with id="defaultOpen" and click on it
         document.getElementById("defaultOpen").click();
-        </script>
+      </script>
+      <script>
+          $(document).ready(function() {
+          $("#nazar-form").validate()
+          });
 
+          $('#nazar-form input').blur(function () {
+          if ($('input:text').is(":empty")) {
+            $('.linkpage').addClass('is-invalid');
+           
+
+          }
+        });
+        
+      </script>
+      <script>
+      $(document).ready(function() {
+  
+        if(window.File && window.FileList && window.FileReader) {
+          $("#files").on("change",function(e) {
+              var files = e.target.files ,
+              filesLength = files.length ;
+              for (var i = 0; i < filesLength ; i++) {
+                  var f = files[i]
+                  var fileReader = new FileReader();
+                  fileReader.onload = (function(e) {
+                      var file = e.target;
+                      $("<img></img>",{
+                          class : "imageThumb",
+                          src : e.target.result,
+                          title : file.name
+                      }).insertAfter("#files");
+                  });
+                  fileReader.readAsDataURL(f);
+              }
+        });
+        } else { alert("!!!") }
+      });
+  
+      </script>
+      <script>
+      class DataList {
+        constructor(containerId, inputId, listId, options) {
+          this.containerId = containerId;
+          this.inputId = inputId;
+          this.listId = listId;
+          this.options = options;
+        }
+
+        create(filter = "") {
+          const list = document.getElementById(this.listId);
+          const filterOptions = this.options.filter(
+          d => filter === "" || d.text.includes(filter));
+
+
+          if (filterOptions.length === 0) {
+            list.classList.remove("active");
+          } else {
+            list.classList.add("active");
+          }
+
+          list.innerHTML = filterOptions.
+          map(o => `<li id=${o.value}>${o.text}</li>`).
+          join("");
+        }
+
+        addListeners(datalist) {
+          const container = document.getElementById(this.containerId);
+          const input = document.getElementById(this.inputId);
+          const list = document.getElementById(this.listId);
+          container.addEventListener("click", e => {
+            if (e.target.id === this.inputId) {
+              container.classList.toggle("active");
+            } else if (e.target.id === "datalist-icon") {
+              container.classList.toggle("active");
+              input.focus();
+            }
+          });
+
+          input.addEventListener("input", function (e) {
+            if (!container.classList.contains("active")) {
+              container.classList.add("active");
+            }
+
+            datalist.create(input.value);
+          });
+
+          list.addEventListener("click", function (e) {
+            if (e.target.nodeName.toLocaleLowerCase() === "li") {
+              input.value = e.target.innerText;
+              container.classList.remove("active");
+            }
+          });
+        }}
+
+
+      const data = [
+      { value: "1", text: "کسب و کار" },
+      { value: "2", text: "کسب و کار" },
+      { value: "3", text: "کسب و کار" },
+      { value: "4", text: "کسب و کار" },
+      { value: "5", text: "کسب و کار" },
+      { value: "6", text: "کسب و کار" },
+      { value: "7", text: "کسب و کار" },
+      { value: "8", text: "کسب و کار" },
+      ];
+
+
+      const datalist = new DataList(
+      "datalist",
+      "datalist-input",
+      "datalist-ul",
+      data);
+
+      datalist.create();
+      datalist.addListeners(datalist);
+      </script>
    </body>
 </html>
