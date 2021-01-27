@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>نظرتو</title>
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/all.min.css">
+      <link rel="stylesheet" href="css/shards.min.css">
+      <link rel="stylesheet" href="css/shards-demo.min.css">
+      <link rel="stylesheet" href="css/style.css">
+      
+   </head>
+   <body class="wrapper">
+      
+      <div class="container-fluid px-0" id="home">
+        <div class="row justify-content-center align-content-center align-items-center comment mx-0">
+          <div class="col-12 text-center">
+            <img src="image/check.png" class="img-fluid">
+          </div>
+          <div class="col-12 text-center my-4">
+            <h4 class="px-3">کدی رو که برات ارسال کردیم لطفاً اینجا وارد کن</h4>
+          </div>
+         
+          <div class="col-12">
+            <form>
+              <div class="form-group text-center passcode">
+                <div class="passcode-area">
+                  <input autofocus type="text" maxlength="1">
+                  <input type="text" maxlength="1">
+                  <input type="text" maxlength="1">
+                  <input type="text" maxlength="1">
+                </div>
+              </div>
+              <div class="text-center">
+                <a href="#" class="d-block wrong-link mb-1">شماره ام اشتباهه</a>
+                <a href="#" class="d-block no-code">کد نیومد</a>
+              </div>
+              
+            </form>
+          </div>
+        </div>
+        
+       
+          
+          
+         
+            
+         </div>
+      </div>
+      
+      
+      <script src="js/jquery-3.4.1.min.js"></script>
+      <script src="js/jquery.validate.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/shards.min.js"></script>
+      <script src="js/demo.min.js"></script>
+      <script>
+        function openCity(evt, cityName) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+          document.getElementById(cityName).style.display = "block";
+          evt.currentTarget.className += " active";
+        }
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+      </script>
+     
+      <script>
+        (function() {
+        const inputs = document.querySelectorAll('.passcode input');
+        for (elem of inputs) {
+          elem.addEventListener('input', function() {
+            const value = this.value;
+            const nextElement = this.nextElementSibling;
+            if (value === '' || !nextElement) {
+              return;
+            }
+            nextElement.focus();
+          })
+        }
+        for (elem of inputs) {
+          elem.addEventListener('keydown', function(event) {
+            if (event.keyCode != 8) {
+              return;
+            }
+            for (innerElem of inputs) {
+              innerElem.value = '';
+            }
+            inputs[0].focus();
+          });
+        }
+      })();
+    </script>
+   </body>
+</html>

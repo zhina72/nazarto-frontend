@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>نظرتو</title>
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/all.min.css">
+      <link rel="stylesheet" href="css/shards.min.css">
+      <link rel="stylesheet" href="css/shards-demo.min.css">
+      <link rel="stylesheet" href="css/style.css">
+      
+   </head>
+   <body class="wrapper">
+      
+      <div class="container-fluid px-0" id="home">
+        <div class="row justify-content-center align-content-center align-items-center comment mx-0">
+          <div class="col-12 text-center">
+            <img src="image/check.png" class="img-fluid img-me">
+          </div>
+          <div class="col-12 text-center my-4">
+            <h3>ممنون شما ثبت نام شدید</h3>
+          </div>
+         
+          <div class="col-12 text-center">
+        
+            <a href="#" class="btn btn-primary btn-me">نظرات من</a>
+             
+          </div>
+        </div>
+        
+       
+          
+          
+         
+            
+         </div>
+      </div>
+      
+      
+      <script src="js/jquery-3.4.1.min.js"></script>
+      <script src="js/jquery.validate.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/shards.min.js"></script>
+      <script src="js/demo.min.js"></script>
+      <script>
+        function openCity(evt, cityName) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+          document.getElementById(cityName).style.display = "block";
+          evt.currentTarget.className += " active";
+        }
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+      </script>
+    
+   </body>
+</html>
