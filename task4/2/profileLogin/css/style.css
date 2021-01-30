@@ -1,0 +1,205 @@
+/*----------------------
+
+  Content:
+    1.Fonts
+    2.Typography
+    3.Tabs
+    
+    
+-----------------------*/
+
+
+/*-------------------------------------------------------*/
+/* 1.Fonts
+/*-------------------------------------------------------*/
+
+@font-face {
+	font-family: "IRANYekan";
+	src: url('../fonts/IRANYekan.eot');
+	src: url('../fonts/IRANYekan.eot?#iefix') format('embedded-opentype'), url('../fonts/IRANYekan.woff') format('woff'), url('../fonts/IRANYekan.ttf') format('truetype');
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "Kalameh";
+	src: url('../fonts/Kalameh Bold.eot');
+	src: url('../fonts/Kalameh Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/Kalameh Bold.woff') format('woff'), url('../fonts/Kalameh Bold.ttf') format('truetype');
+	font-weight: normal;
+}
+
+
+/*-------------------------------------------------------*/
+/* 2.Typography
+/*-------------------------------------------------------*/
+
+body {
+	font-family: IRANYekan;
+	overflow-x: hidden;
+}
+
+.align-direction {
+	direction: rtl;
+	text-align: right;
+}
+
+.right-dir {
+	direction: rtl;
+}
+
+.h4 {
+	font-size: 28px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.29;
+	letter-spacing: 0.18px;
+	color: #222222;
+	margin-bottom: 40px;
+}
+
+.h5 {
+	font-size: 18px;
+	font-weight: 600;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.44;
+	letter-spacing: 0.11px;
+	color: #222222;
+}
+
+.h6 {
+	font-size: 15px;
+	font-weight: 600;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.67;
+	letter-spacing: 0.09px;
+	color: #222222;
+}
+
+p {
+	font-size: 18px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.44;
+	letter-spacing: 0.11px;
+	color: #49545d;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+}
+
+#home,
+header {
+	background: #f9f9f9;
+}
+
+
+/*-------------------------------------------------------*/
+/* 3.Tabs
+/*-------------------------------------------------------*/
+
+.right-dir{
+	direction:rtl;
+}
+#home{
+	background: #f9f9f9;
+	height: 100vh;
+}
+.tabs-bottom{
+	position: fixed;
+    bottom: 0;
+    padding: 10px;
+    background: #fff;
+    border-top: 1px solid #eee;
+	box-shadow: 1px 1px 10px #eee;
+	color: #787878;	
+}
+
+.tabs .tabs-bottom span{
+	font-size: 12px;
+	font-weight: 700;
+}
+.tabs-top{
+	position: fixed;
+    top: 0;
+    padding: 17px;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+	box-shadow: 1px 1px 10px #eee;
+	color: #333;
+}
+.tabs-bottom .tabs-icon.active,.tabs-bottom .tabs-icon:active,.tabs-top i:active{
+	color: #007bff;
+}
+
+.tabs-bottom .fa::before,.tabs-top .fa::before{
+	font-size: 23px;
+}
+.tabs-top .tabs-title i{
+    position: absolute;
+    right: 17px;
+    top: -1px;
+}
+.tabs-title h6{
+	font-weight: 700;
+}
+.logo-icon{
+	width:50%;
+	padding-top: 50px;
+	padding-bottom: 25px;
+}
+.btn-login{
+	border-radius: 0;
+    padding: .375rem 3.5rem;
+    font-size: 20px;
+	font-weight: 700;
+	background: #0063F7;
+}
+.custom-control{
+	padding-right: 2.5rem;
+	padding-left: unset;	
+}
+.custom-control-label::before,.custom-control-label::after{
+	right: -2.3rem;
+	left:unset;
+	width:1.5rem;
+	height:1.5rem;
+}
+.custom-control-label{
+	font-size: 22px;
+	font-weight: bold;
+}
+.radio-box{
+	border-top: 1px solid #e5e5e5;
+	border-bottom: 1px solid #e5e5e5;
+}
+.links-nazar li a{
+	color: #212529;
+	font-size: 22px;
+	font-weight: bold;
+
+}
+.links-nazar li {
+	margin-bottom: 20px;
+}
+.links-nazar li:first-child{
+	margin-top:20px;
+}
+.links-nazar li a:hover{
+	text-decoration: none;
+	color:#0063F7;
+}
+.mob-link{
+	color: #222;
+	font-size: 30px;
+	font-weight: 900;
+	font-family: sans-serif;
+}
+.mob-link:hover{
+	text-decoration: none;
+	color:#0063F7;
+}
