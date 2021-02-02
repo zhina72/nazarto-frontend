@@ -1,0 +1,373 @@
+/*----------------------
+
+  Content:
+    1.Fonts
+    2.Typography
+    2.Menu
+    4.Hero
+    5.Main
+    6.Work
+    7.Newsletter
+    8.Footer
+    9.Responsive
+
+    
+-----------------------*/
+
+
+/*-------------------------------------------------------*/
+/* 1.Fonts
+/*-------------------------------------------------------*/
+
+@font-face {
+	font-family: "IRANYekan";
+	src: url('../fonts/IRANYekan.eot');
+	src: url('../fonts/IRANYekan.eot?#iefix') format('embedded-opentype'), url('../fonts/IRANYekan.woff') format('woff'), url('../fonts/IRANYekan.ttf') format('truetype');
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "Kalameh";
+	src: url('../fonts/Kalameh Bold.eot');
+	src: url('../fonts/Kalameh Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/Kalameh Bold.woff') format('woff'), url('../fonts/Kalameh Bold.ttf') format('truetype');
+	font-weight: normal;
+}
+
+
+/*-------------------------------------------------------*/
+/* 2.Typography
+/*-------------------------------------------------------*/
+
+body {
+	font-family: IRANYekan;
+	overflow-x: hidden;
+}
+
+.align-direction {
+	direction: rtl;
+	text-align: right;
+}
+
+.right-dir {
+	direction: rtl;
+}
+
+.h4 {
+	font-size: 28px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.29;
+	letter-spacing: 0.18px;
+	color: #222222;
+	margin-bottom: 40px;
+}
+
+.h5 {
+	font-size: 18px;
+	font-weight: 600;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.44;
+	letter-spacing: 0.11px;
+	color: #222222;
+}
+
+.h6 {
+	font-size: 15px;
+	font-weight: 600;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.67;
+	letter-spacing: 0.09px;
+	color: #222222;
+}
+
+p {
+	font-size: 16px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.44;
+	letter-spacing: 0.11px;
+	color: #49545d;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+}
+
+#home,
+header {
+	background: #F9FBFD;
+}
+a,p,h6,h5,h4,h3,h2,h1{
+	font-family: IRANYekan !important;
+}
+
+/*-------------------------------------------------------*/
+/* 3.Menu
+/*-------------------------------------------------------*/
+
+.navbar-light .navbar-toggler {
+	border: none !important;
+}
+
+ul.navbar-nav {
+	margin-left: auto;
+	direction: rtl;
+	text-align: right;
+	padding-right: 0;
+	padding-left: 40px;
+}
+
+li.nav-item {
+	position: relative;
+}
+
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+	font-weight: 600;
+	color: #244771;
+}
+
+.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show>.nav-link {
+	color: #244771;
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+	font-weight: 600;
+}
+
+.navbar-light .navbar-nav .nav-item.active .nav-link {
+	font-weight: 600;
+}
+
+.navbar-light .navbar-nav .nav-link.active:after {
+	content: "";
+	height: 2px;
+	width: 24px;
+	position: absolute;
+	bottom: 15px;
+	right: 28px;
+	background-color: #244771;
+}
+
+@media (max-width: 1110px) {
+	.navbar-expand-lg .navbar-nav .nav-link:after {
+		right: 20px;
+	}
+}
+
+.navbar-expand-lg .navbar-nav .nav-item.active .nav-link:after {
+	background-color: #244771;
+}
+
+.navbar-light .navbar-toggler {
+	outline: none;
+	border-radius: 0
+}
+
+.navbar-brand img {
+	width:25%;
+
+}
+
+.navbar-expand-lg .navbar-nav .nazar-link {
+	padding: 0;
+	margin-top: 40px;
+	margin-right: 128px;
+	font-size: 14px;
+	font-weight: 500;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	text-align: right;
+	color: #1c1c28;
+}
+
+.navbar-expand-lg .navbar-nav .work-link {
+	margin-top: 32px;
+	margin-left: 44px;
+	padding: 7px 20px 8px 21px;
+	border-radius: 26px;
+	border: solid 2px #5b8def;
+	font-size: 14px;
+	font-weight: 500;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	text-align: right;
+	color: #0063f7;
+}
+
+.shape-login {
+	width: 20px;
+	height: 19px;
+	margin: 4px 0 2px 12px;
+}
+
+.navbar-expand-lg .navbar-nav .login {
+	margin-top: 40px;
+	margin-left: 84px;
+	padding: 0;
+	font-size: 14px;
+	font-weight: 500;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	text-align: center;
+	color: #1c1c28;
+}
+
+
+/*-------------------------------------------------------*/
+/* 4.Hero
+/*-------------------------------------------------------*/
+
+.hero-content {
+	margin-top: 33px;
+}
+
+.hero-content h2 {
+	margin: auto;
+	font-family: Kalameh;
+	font-size: 48px;
+	font-weight: bold;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.29;
+	letter-spacing: normal;
+	text-align: center;
+	color: #757575;
+}
+
+.hero-content .p-content {
+	padding-top: 32px;
+	font-size: 18px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	text-align: center;
+	color: #555770;
+}
+
+.s1-hero {
+	font-weight: 900;
+	color: #0063f7;
+}
+
+.s2-hero {
+	font-weight: 900;
+	color: #ff8800;
+	position: relative;
+}
+
+.group-3 {
+	margin-top: 39px;
+	margin-right: 200px;
+	object-fit: contain;
+}
+
+.group-4 {
+	position: absolute;
+	top: 190px;
+	right: 380px;
+}
+
+
+
+.hero-content .form-control {
+
+	padding-right: 68px;
+	height: 56px;
+	border-radius: 38px;
+	box-shadow: 1px 3px 6px 0 rgba(0, 0, 0, 0.1);
+	background-color: #ffffff;
+	z-index: 9;
+	position: relative;
+}
+
+.search-icon {
+	width: 24px;
+	height: 24px;
+	position: absolute;
+	top: 15px;
+	right: 40px;
+	z-index: 99;
+}
+
+.p-click {
+	margin-right: 28px;
+	margin-top: 20px;
+	font-size: 16px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	text-align: right;
+	color: #6e798d;
+}
+
+.p-click a {
+	font-weight: 500;
+	color: #0040ff;
+	text-decoration: none;
+}
+
+.group {
+	position: absolute;
+	top: 50px;
+	right: 0;
+}
+
+.group-6 {
+	position: absolute;
+	top: 110px;
+	left: -30px;
+}
+
+.card-image .card-img-overlay{
+	padding:0;
+	display: flex;
+	align-items: center;
+}
+.card-image .card-img-overlay p{
+	font-weight: 900;
+	margin-bottom: 0;
+	font-size: 14px;
+	
+}
+.owl-theme .item a{
+	text-decoration: none;
+}
+.owl-theme .item h6{
+	font-weight: bold;
+}
+.owl-theme .item p{
+	font-size: 13px;
+}
+.owl-theme .item .card{
+    box-shadow: 2px 2px 10px #eee;
+}
+.owl-work .item a img{
+
+	width: 25%;
+	border-radius: 50px;
+}
+.owl-work .card h6{
+	width:100%;
+	text-align: left;
+	margin-bottom:0;
+	margin-top:.5rem;
+}
