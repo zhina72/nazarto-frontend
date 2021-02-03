@@ -371,3 +371,47 @@ li.nav-item {
 	margin-bottom:0;
 	margin-top:.5rem;
 }
+.carousel {
+	box-shadow: none;
+}
+.carousel-indicators li {
+    width: 15px;
+	height: 15px;
+	border-radius: 50px;
+	border:1px solid #aaa;
+    margin-right: 3px;
+    margin-left: 3px;
+    background-color: rgba(255,255,255,.5);
+
+}
+.carousel-indicators{
+	margin-bottom: 0;
+    bottom: -50px;
+}
+.carousel-caption{
+	text-align: right;
+	top:10%;
+}
+.carousel-item img{
+	border-radius: 50%;
+	margin-left: 200px;
+	width:25%;
+}
+.carousel-caption p{
+	width: 500px;
+	text-align: right;
+	float: right;
+}
+@media screen and (max-width:1200px){
+	.carousel-item img{
+		margin-left: 80px;
+	}
+	.carousel-caption{
+		right:10%;
+		top:10px;
+	}
+	.carousel-caption p{
+		font-size: 14px;
+	}
+
+}
