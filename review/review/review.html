@@ -35,9 +35,9 @@
             </div>
          </nav>
       </header>
-      <div class="container-fluid" id="sidebar">
+      <div class="container-fluid px-0" id="sidebar">
          <div class="row mx-0 right-dir sidebar">
-            <div class="col-3 text-right sidebar mr-3">
+            <div class="col-3 px-4 text-right sidebar">
                <i class="fa fa-bars"></i>
            
                <img src="image/digikala-com-logo-300x300.png" class="img-fluid company-icon">
@@ -49,26 +49,30 @@
                   <span class="fa fa-star"></span>
                   <span class="fa fa-star"></span>
                 </div>
-                <div class="row px-5 text-center mt-4 cm-side ">
-                   <div class="col-6 cm1">
+                <div class="row px-5 text-center mt-4 mx-0 cm-side ">
+                   <div class="col-6 cm1 px-0">
                       <span>۱۴۰۰ نظر</span>
                    </div>
-                   <div class="col-6 cm1">
+                   <div class="col-6 cm1 px-0">
                      <span>۳.۰۰ امتیاز</span>
                   </div>
                 </div>
-                <div class="row info-border mx-2">
+                <div class="row info-border mx-2 mx-0">
                   <div class="col-12 pt-4">
                      <div class="percent text-center">
-                        <span>٪۸۸</span>
-                        <p class=" mx-4">از کسانی که نظر داده‌اند
-                          دیجی‌کالا را پیشنهاد می‌کنند</p>
+                        <img src="image/group.png" class="img-fluid">
+                        <span class="percent-span">٪۸۸</span>
+                        <p class=" mt-3 mx-4">از کسانی که نظر داده‌اند<br>
+                           <span>
+                              دیجی‌کالا را پیشنهاد می‌کنند
+                           </span>
+                          </p>
                      </div>
                   </div>
                 </div>
              
                 
-               <div class="row px-4 text-center mt-4 info-side">
+               <div class="row px-4 text-center mt-4 info-side mx-0">
                    <div class="col-12 info1 text-right pt-4 d-flex px-0">
                       <div class="line"></div>
                      <span>اطلاعات</span>
@@ -103,7 +107,7 @@
                  </div>
                  
                </div>
-               <div class="row px-4 text-center mt-4 info-side">
+               <div class="row px-4 text-center mt-4 info-side mx-0">
                   
                   <div class="col-12 text-right ersal my-3 px-0">
                     <img src="image/group-7.png" class="img-fluid ml-2"><span>ارتباط با مشتریان</span>
@@ -129,7 +133,7 @@
                  <span>۴.۵ از ۵</span>
                 </div>
                </div>
-                <div class="row px-4 text-center mt-4 pb-4 info-side ">
+                <div class="row px-4 text-center mt-4 pb-4 info-side mx-0">
                   <div class="col-12 info2 text-right pt-4 d-flex px-0">
                      <div class="line"></div>
                     <span>درباره دیجی کالا</span>
@@ -139,7 +143,7 @@
                   </div>
                   <a href="#" class="info-link">مشاهده وبسایت</a>
                </div>
-               <div class="row px-4 text-center info-side ">
+               <div class="row px-4 text-center info-side mx-0">
                   
                  <div class="col-7 px-0 pt-4 text-right info-span info-border">
                     <span  class="d-block info-title">تلفن</span>
@@ -166,6 +170,246 @@
              
 
             </div>
+            <div class="col-9 main-review">
+               <div class="row mx-0">
+                  <div class="col-12 right-dir mt-5">
+                     <div class="tab right-dir text-right">
+                       <button class="tablinks ml-4" onclick="openCity(event, 'company')" id="defaultOpen"><img src="image/store.png" class="img-fluid ml-2">نظرات درباره شرکت</button>
+                       <button class="tablinks tablinks1 ml-4" onclick="openCity(event, 'product')"><img src="image/shopping-bag.png" class="img-fluid ml-2">نظرات درباره محصولات</button>
+                       <button class="tablinks tablinks2" onclick="openCity(event, 'question')"><img src="image/help-circle.png" class="img-fluid ml-2">سؤالات شما</button>
+                 
+                     </div>
+                     
+                       <div id="company" class="tabcontent text-center p4-5">
+                  
+                        <div class="row mx-0 mt-4">
+
+                           <div class="col-12 main main-rate px-0">
+                              <div class="row">
+                              <div class="col-12 right-dir text-right">
+                                 <h6 class="px-4 mt-4">نظرتون رو به اشتراک بذارید</h6>
+                                 <p class="mb-2 px-4">نظر خودتون در رابطه با دیجی‌کالا با ما درمیون بذارید</p>
+                              </div>
+                              
+                              <div class="col-12 d-flex nazar-me">
+                                 <div class="row form-group px-4 w-100">
+                                    <textarea class="form-control col-8" rows="6"></textarea>
+                                    <div class="custom-file right-dir mt-4 col-4">
+                                      <input type="file" id="files" name="files[]" multiple required class="form-control mt-3 upload-pic custom-file-input" required>
+                                     
+                                      <label class="custom-file-label my-0" for="files">اضافه کردن عکس به نظرم</label>
+                                    </div>
+                                   
+                                  </div>
+                              </div>
+                                
+                              </div>
+                            </div>
+                           <div class="col-6 px-0 text-right d-flex align-items-center">
+                              <h6 class="mb-0">نظرات کاربران در رابطه با دیجی‌کالا</h6>
+                           </div>
+                           <div class="col-6 px-0">
+                              <div class="row select-review mx-0">
+                                 <div class="col-6 px-0">
+                                    <div class="form-group row mx-0 mb-0 align-items-center">
+                                    <label for="FormControlSelect" class="col-4 mb-0 px-0 text-right">دسته بندی:</label>
+                                    <select class="form-control col-5" id="FormControlSelect">
+                                       <option>جدیدترین ها</option>
+                                       <option>جدیدترین ها</option>
+                                       <option>جدیدترین ها</option>
+                                       
+                                    </select>
+                                    </div>
+                                 </div>
+                                 <div class="col-4 px-0">
+                                    <div class="form-group row mx-0 mb-0 align-items-center">
+                                       <label for="FormControlSelect" class="col-3 mb-0 px-0 text-right">امتیاز:</label>
+                                       <select class="form-control col-5" id="FormControlSelect">
+                                          <option>۳ ستاره</option>
+                                          <option>۳ ستاره</option>
+                                          <option>۳ ستاره</option>
+                                          
+                                       </select>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        
+                           <div class="col-12 p-4 mt-4 text-right comment">
+                              <div class="row mx-0 mb-4">
+                                 <div class="col-6 d-flex align-items-center">
+                                    <h6 class="mb-0 comment-name">ژینا حق شناس</h6>
+                                    <div class="rate text-center pr-5">
+                                       <span class="fa fa-star checked"></span>
+                                       <span class="fa fa-star checked"></span>
+                                       <span class="fa fa-star checked"></span>
+                                       <span class="fa fa-star"></span>
+                                       <span class="fa fa-star"></span>
+                                    </div>
+                                 </div>
+                                 <div class="col-6 d-flex like-comment">
+                                    <a href="#"><img src="image/share.png" class="img-fluid ml-4"></a>
+                                    <a href="#"><img src="image/like.png" class="img-fluid ml-4"></a>
+                                    <span class="date">۲ ساعت قبل</span>
+                                 </div>
+                              </div>
+                              <img src="image/atoms-icons-system-quote-copy.png" class="img-fluid">
+                              <p class="mb-0 px-4">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است،</p>
+                              <img src="image/atoms-icons-system-quote-copy.png" class="img-fluid float-left">
+                           </div>
+                           <div class="col-12 p-4 mt-4 text-right comment">
+                              <div class="row mx-0 mb-4">
+                                 <div class="col-6 d-flex align-items-center">
+                                    <h6 class="mb-0 comment-name">ژینا حق شناس</h6>
+                                    <div class="rate text-center pr-5">
+                                       <span class="fa fa-star checked"></span>
+                                       <span class="fa fa-star checked"></span>
+                                       <span class="fa fa-star checked"></span>
+                                       <span class="fa fa-star"></span>
+                                       <span class="fa fa-star"></span>
+                                    </div>
+                                 </div>
+                                 <div class="col-6 d-flex like-comment">
+                                    <a href="#"><img src="image/share.png" class="img-fluid ml-4"></a>
+                                    <a href="#"><img src="image/thumbs-up.png" class="img-fluid ml-4"></a>
+                                    <span class="date">۲ ساعت قبل</span>
+                                 </div>
+                              </div>
+                              <img src="image/atoms-icons-system-quote-copy.png" class="img-fluid">
+                              <p class="mb-0 px-4">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است،</p>
+                              <img src="image/atoms-icons-system-quote-copy.png" class="img-fluid float-left">
+                              <div class="row mx-0 mt-4 replay-comment">
+                                 <div class="col-2 px-0">
+                                    <h6>دیجی‌کالا</h6>
+                                 </div>
+                                 <div class="col-10 px-0">
+                                    <p class="mb-0">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است،</p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-12 p-4 mt-4 text-right comment">
+                              <div class="row mx-0 mb-4">
+                                 <div class="col-6 d-flex align-items-center">
+                                    <h6 class="mb-0 comment-name">ژینا حق شناس</h6>
+                                    <div class="rate text-center pr-5">
+                                       <span class="fa fa-star checked"></span>
+                                       <span class="fa fa-star checked"></span>
+                                       <span class="fa fa-star checked"></span>
+                                       <span class="fa fa-star"></span>
+                                       <span class="fa fa-star"></span>
+                                    </div>
+                                 </div>
+                                 <div class="col-6 d-flex like-comment">
+                                    <a href="#"><img src="image/share.png" class="img-fluid ml-4"></a>
+                                    <a href="#"><img src="image/like.png" class="img-fluid ml-4"></a>
+                                    <span class="date">۲ ساعت قبل</span>
+                                 </div>
+                              </div>
+                              <div class="row mx-0">
+                                 <div class="col-8">
+                                    <img src="image/atoms-icons-system-quote-copy.png" class="img-fluid">
+                                    <p class="mb-0 px-4">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است،</p>
+                                    <img src="image/atoms-icons-system-quote-copy.png" class="img-fluid float-left">
+                                 </div>
+                                 <div class="col-4">
+                                    <img src="image/mob.jpg" class="img-fluid mob-img">
+                                 </div>
+                              </div>
+                             
+                           </div>
+                           <div class="col-12 p-4 mt-4 text-right comment">
+                              <div class="row mx-0 mb-4">
+                                 <div class="col-6 d-flex align-items-center">
+                                    <h6 class="mb-0 comment-name">ژینا حق شناس</h6>
+                                    <div class="rate text-center pr-5">
+                                       <span class="fa fa-star checked"></span>
+                                       <span class="fa fa-star checked"></span>
+                                       <span class="fa fa-star checked"></span>
+                                       <span class="fa fa-star"></span>
+                                       <span class="fa fa-star"></span>
+                                    </div>
+                                 </div>
+                                 <div class="col-6 d-flex like-comment">
+                                    <a href="#"><img src="image/share.png" class="img-fluid ml-4"></a>
+                                    <a href="#"><img src="image/like.png" class="img-fluid ml-4"></a>
+                                    <span class="date">۲ ساعت قبل</span>
+                                 </div>
+                              </div>
+                              <img src="image/atoms-icons-system-quote-copy.png" class="img-fluid">
+                              <p class="mb-0 px-4">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است،</p>
+                              <img src="image/atoms-icons-system-quote-copy.png" class="img-fluid float-left">
+                           </div>
+                           <div class="col-12 p-4 mt-4 text-right comment">
+                              <div class="row mx-0 mb-4">
+                                 <div class="col-6 d-flex align-items-center">
+                                    <h6 class="mb-0 comment-name">ژینا حق شناس</h6>
+                                    <div class="rate text-center pr-5">
+                                       <span class="fa fa-star checked"></span>
+                                       <span class="fa fa-star checked"></span>
+                                       <span class="fa fa-star checked"></span>
+                                       <span class="fa fa-star"></span>
+                                       <span class="fa fa-star"></span>
+                                    </div>
+                                 </div>
+                                 <div class="col-6 d-flex like-comment">
+                                    <a href="#"><img src="image/share.png" class="img-fluid ml-4"></a>
+                                    <a href="#"><img src="image/thumbs-up.png" class="img-fluid ml-4"></a>
+                                    <span class="date">۲ ساعت قبل</span>
+                                 </div>
+                              </div>
+                              <img src="image/atoms-icons-system-quote-copy.png" class="img-fluid">
+                              <p class="mb-0 px-4">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است،</p>
+                              <img src="image/atoms-icons-system-quote-copy.png" class="img-fluid float-left">
+                              <div class="row mx-0 mt-4 replay-comment">
+                                 <div class="col-2 px-0">
+                                    <h6>دیجی‌کالا</h6>
+                                 </div>
+                                 <div class="col-10 px-0">
+                                    <p class="mb-0">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است،</p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-12 p-4 mt-4 text-right comment">
+                              <div class="row mx-0 mb-4">
+                                 <div class="col-6 d-flex align-items-center">
+                                    <h6 class="mb-0 comment-name">ژینا حق شناس</h6>
+                                    <div class="rate text-center pr-5">
+                                       <span class="fa fa-star checked"></span>
+                                       <span class="fa fa-star checked"></span>
+                                       <span class="fa fa-star checked"></span>
+                                       <span class="fa fa-star"></span>
+                                       <span class="fa fa-star"></span>
+                                    </div>
+                                 </div>
+                                 <div class="col-6 d-flex like-comment">
+                                    <a href="#"><img src="image/share.png" class="img-fluid ml-4"></a>
+                                    <a href="#"><img src="image/like.png" class="img-fluid ml-4"></a>
+                                    <span class="date">۲ ساعت قبل</span>
+                                 </div>
+                              </div>
+                              <div class="row mx-0">
+                                 <div class="col-8">
+                                    <img src="image/atoms-icons-system-quote-copy.png" class="img-fluid">
+                                    <p class="mb-0 px-4">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است،</p>
+                                    <img src="image/atoms-icons-system-quote-copy.png" class="img-fluid float-left">
+                                 </div>
+                                 <div class="col-4">
+                                    <img src="image/mob.jpg" class="img-fluid mob-img">
+                                 </div>
+                              </div>
+                             
+                           </div>
+                        
+                        </div>
+                         
+                       </div>
+                     </div>
+                     
+                     
+                  
+                   </div>
+               </div>
+            </div>
          </div>
          
       </div>
@@ -177,7 +421,49 @@
       $(".fa-bars").click(function(){
          $(".sidebar").css('display','none');
        });
-       </script>
+      </script>
+      <script>
+         function openCity(evt, cityName) {
+           var i, tabcontent, tablinks;
+           tabcontent = document.getElementsByClassName("tabcontent");
+           for (i = 0; i < tabcontent.length; i++) {
+             tabcontent[i].style.display = "none";
+           }
+           tablinks = document.getElementsByClassName("tablinks");
+           for (i = 0; i < tablinks.length; i++) {
+             tablinks[i].className = tablinks[i].className.replace(" active", "");
+           }
+           document.getElementById(cityName).style.display = "block";
+           evt.currentTarget.className += " active";
+         }
+         // Get the element with id="defaultOpen" and click on it
+         document.getElementById("defaultOpen").click();
+      </script>
+        <script>
+         $(document).ready(function() {
+     
+           if(window.File && window.FileList && window.FileReader) {
+             $("#files").on("change",function(e) {
+                 var files = e.target.files ,
+                 filesLength = files.length ;
+                 for (var i = 0; i < filesLength ; i++) {
+                     var f = files[i]
+                     var fileReader = new FileReader();
+                     fileReader.onload = (function(e) {
+                         var file = e.target;
+                         $("<img></img>",{
+                             class : "imageThumb",
+                             src : e.target.result,
+                             title : file.name
+                         }).insertAfter("#files");
+                     });
+                     fileReader.readAsDataURL(f);
+                 }
+           });
+           } else { alert("!!!") }
+         });
+     
+         </script>
 
    </body>
 </html>

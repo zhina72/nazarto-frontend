@@ -330,15 +330,23 @@ li.nav-item {
 	font-size: 14px;
 	font-weight: bold;
 }
-.percent span{
-font-size: 26px;
+.percent-span{
+font-size: 30px;
   font-weight: 900;
   color: #0063f7;
+  position: absolute;
+  left: 40%;
+    top: 40%;
 }
 .percent p{
 	font-size: 12px;
   font-weight: 600;
   color: #1c1c28;
+}
+
+.percent p span{
+	font-size: 13px;
+	font-weight: 800;
 }
 .info-side .info1{
 	border-top: solid 1px #e4e4eb;
@@ -384,7 +392,7 @@ font-size: 26px;
 	border-radius: 17.5px;
 }
 .info-side p{
-	font-size: 12px;
+	font-size: 11px;
 	color: #6e798d;
 }
 .info-side .info-link{
@@ -410,3 +418,137 @@ font-size: 26px;
 .info-side .info-span span.info-mail{
 	font-family: sans-serif;
 }
+.main-review{
+	background: #f9f9f9;
+}
+.main-review .tablinks{
+	border:0;
+	outline:none;
+	background: transparent;
+	font-size: 14px;
+}
+.main-review .tablinks:focus .main-review .tablinks:active{
+	border:0;
+	outline:none;
+}
+.main-review .tab{
+    border-bottom: 1px solid #ebebf0;
+}
+.main-review .tablinks.active{
+	padding-bottom: 16px;
+	border-bottom: 4px solid #0063f7;
+	font-weight: bold;
+	border-radius: 2px;
+}
+.nazar-me{
+	border-bottom: 1px solid #ebebf0;
+}
+	
+.main-review .tabcontent .form-group{
+	justify-content: flex-end;
+	font-size:13px;
+}
+.main-review .tabcontent .select-review{
+	justify-content: flex-end;
+}
+.main-review .tabcontent select{
+	display: block;
+    width: 100%;
+    height: unset; 
+    padding: 0;
+    font-size: 13px;
+    font-weight: 400;
+	line-height: 1.5;
+	border:none;
+    background-color: transparent;
+
+}
+.main-review .tabcontent h6{
+	font-weight: bold;
+}
+.main-review .tabcontent label{
+	color: #8f90a6;
+}
+.like-comment{
+	justify-content: flex-end;
+	align-items: flex-end;
+}
+.comment{
+	background:#fff;
+	border-radius: 12px;
+}
+.comment-name{
+	color: #555770;
+	font-size: 14px;
+}
+.comment .rate .fa-star {
+	font-size: 14px;
+}
+.like-comment span{
+	color: #555770;
+	font-size: 13px;
+}
+.like-comment img{
+	width: 35%;
+}
+.replay-comment h6{
+	font-size: 14px;
+}
+.comment p,.replay-comment p{
+	font-size: 13px;
+	font-weight: 500;
+}
+.replay-comment{
+	background:#e5f0ff;
+	border-radius: 12px;
+	padding: 30px;
+}
+.mob-img{
+	border-radius: 12px;
+}
+.main .form-control{
+	border:none;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.main-rate p{
+	font-size: 14px;
+}
+
+input[type="file"] {
+
+	display:block;
+}
+
+.imageThumb {
+	max-height: 75px;
+	border: 2px solid;
+	margin: 10px 10px 0 0;
+	padding: 1px;
+	margin-bottom: 60px;
+}
+
+.custom-file-label::after {
+    content: "+" !important;
+    font-size: 40px;
+	font-weight: 900;
+	right:unset;
+	left: 0;
+	background: none;
+	border:0;
+	top: -14px;
+}
+.main .custom-file-label{
+	border:none;
+	border-radius: .375rem;	
+	padding: .5rem 1rem;
+	font-weight: 700;
+	font-size: 16px;
+	height: 45px;
+    line-height: 30px;
+}
+.custom-file-input:focus~.custom-file-label::after{
+	background: none;
+
+}
+
