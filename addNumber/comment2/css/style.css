@@ -1,0 +1,486 @@
+/*----------------------
+
+  Content:
+    1.Fonts
+    2.Typography
+    3.Tabs
+    
+    
+-----------------------*/
+
+
+/*-------------------------------------------------------*/
+/* 1.Fonts
+/*-------------------------------------------------------*/
+
+@font-face {
+	font-family: "IRANYekan";
+	src: url('../fonts/IRANYekan.eot');
+	src: url('../fonts/IRANYekan.eot?#iefix') format('embedded-opentype'), url('../fonts/IRANYekan.woff') format('woff'), url('../fonts/IRANYekan.ttf') format('truetype');
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "Kalameh";
+	src: url('../fonts/Kalameh Bold.eot');
+	src: url('../fonts/Kalameh Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/Kalameh Bold.woff') format('woff'), url('../fonts/Kalameh Bold.ttf') format('truetype');
+	font-weight: normal;
+}
+
+
+/*-------------------------------------------------------*/
+/* 2.Typography
+/*-------------------------------------------------------*/
+
+body {
+	font-family: IRANYekan;
+	overflow-x: hidden;
+}
+
+.align-direction {
+	direction: rtl;
+	text-align: right;
+}
+
+.right-dir {
+	direction: rtl;
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6,.btn{
+	font-family: IRANYekan;
+}
+.h4 {
+	font-size: 28px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.29;
+	letter-spacing: 0.18px;
+	color: #222222;
+	margin-bottom: 40px;
+}
+
+.h5 {
+	font-size: 18px;
+	font-weight: 600;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.44;
+	letter-spacing: 0.11px;
+	color: #222222;
+}
+
+.h6 {
+	font-size: 15px;
+	font-weight: 600;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.67;
+	letter-spacing: 0.09px;
+	color: #222222;
+}
+
+p {
+	font-size: 18px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.44;
+	letter-spacing: 0.11px;
+	color: #49545d;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+}
+
+
+
+/*-------------------------------------------------------*/
+/* 3.Menu
+/*-------------------------------------------------------*/
+
+.navbar-light .navbar-toggler {
+	border: none !important;
+}
+
+ul.navbar-nav {
+	margin-left: auto;
+	direction: rtl;
+	text-align: right;
+	padding-right: 0;
+	padding-left: 40px;
+}
+
+li.nav-item {
+	position: relative;
+}
+
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+	font-weight: 600;
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+	font-weight: 600;
+}
+
+.navbar-light .navbar-nav .nav-item.active .nav-link {
+	font-weight: 600;
+}
+
+.navbar-light .navbar-nav .nav-link.active:after {
+	content: "";
+	height: 2px;
+	width: 24px;
+	position: absolute;
+	bottom: 15px;
+	right: 28px;
+	background-color: #244771;
+}
+
+@media (max-width: 1110px) {
+	.navbar-expand-lg .navbar-nav .nav-link:after {
+		right: 20px;
+	}
+}
+
+.navbar-expand-lg .navbar-nav .nav-item.active .nav-link:after {
+	background-color: #244771;
+}
+
+.navbar-light .navbar-toggler {
+	outline: none;
+	border-radius: 0
+}
+
+.navbar-brand {
+	width: 10%;
+	margin-right: 3rem;
+}
+.navbar-brand img{
+	width: 50%;
+}
+
+.navbar-expand-lg .navbar-nav .nazar-link {
+	padding: 0;
+	font-size: 14px;
+	font-weight: 500;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	text-align: right;
+	color: #1c1c28;
+}
+
+.navbar-expand-lg .navbar-nav .work-link {
+
+	margin-left: 44px;
+	padding: 7px 20px 8px 21px;
+	border-radius: 26px;
+	border: solid 2px #5b8def;
+	font-size: 14px;
+	font-weight: 500;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	text-align: right;
+	color: #0063f7;
+}
+
+.shape-login {
+	width: 20px;
+	height: 19px;
+	margin: 4px 0 2px 12px;
+}
+
+.navbar-expand-lg .navbar-nav .login {
+
+	padding: 0;
+	font-size: 14px;
+	font-weight: 500;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	text-align: center;
+	color: #1c1c28;
+}
+
+
+
+
+/*-------------------------------------------------------*/
+/* 9.responsive
+/*-------------------------------------------------------*/
+
+
+@media screen and (max-width: 992px) {
+	.hero-content {
+		text-align: center;
+		padding-top: 30px;
+		padding-bottom: 20px;
+	}
+	.footer-bg p {
+		font-size: 14px;
+	}
+	.links {
+		border-right: none;
+	}
+	.navbar-brand {
+		margin: 0;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.navbar-expand-lg .navbar-nav .nazar-link {
+		margin-right: 0;
+	}
+	.group-3 {
+		margin-top: 0;
+	}
+	.work ul li a {
+		margin-top: 15px;
+		margin-bottom: 40px;
+	}
+	.img-news {
+		left: -19%;
+		width: 200px;
+	}
+	.news-content:before {
+		top: -200px;
+	}
+	.img-main img {
+		padding: 32px 59px 18px 59px;
+	}
+	.footer-col {
+		padding-right: 10px;
+		padding-left: 10px;
+	}
+	.links {
+		border-right: none;
+		padding-right: 0;
+	}
+	.txt-footer {
+		margin-right: 0;
+		margin-top: 10px;
+	}
+	.s2-hero:before {
+		right: -295px;
+	}
+	.img-insta {
+		margin-right: 5px;
+		margin-left: 9px;
+	}
+	.new-input {
+		padding: 0;
+	}
+}
+
+
+
+
+/*-------------------------------------------------------*/
+/* 3.Tabs
+/*-------------------------------------------------------*/
+#home {
+	background: #fafafa;
+	height: 100vh;
+}
+.comment{
+ height: 100%;	
+}
+.right-dir{
+	direction:rtl;
+}
+
+.tabs-bottom{
+	position: fixed;
+    bottom: 0;
+    padding: 10px;
+    background: #fff;
+    border-top: 1px solid #eee;
+	box-shadow: 1px 1px 10px #eee;
+	color: #787878;
+	max-height: 100px;
+	
+}
+.mb-100{
+	margin-top: 100px;
+}
+.tabs .tabs-bottom span{
+	font-size: 12px;
+	font-weight: 700;
+}
+.tabs .tabs-bottom span a{
+	color: #787878;
+	text-decoration: none;
+}
+
+.tabs-bottom .tabs-icon.active,.tabs-bottom .tabs-icon:active,.tabs-top i:active{
+	color: #007bff;
+}
+.tabs-bottom .tabs-icon.active a,.tabs-bottom .tabs-icon:active a,.tabs-top i:active{
+	color: #007bff;
+}
+
+.tabs-bottom .fa::before,.tabs-top .fa::before{
+	font-size: 23px;
+}
+.tabs-top{
+	position: fixed;
+    top: 0;
+    padding: 17px;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+	box-shadow: 1px 1px 10px #eee;
+	color: #333;
+	z-index:999;
+}
+.tabs-top .tabs-title i{
+    position: absolute;
+    right: 17px;
+    top: -1px;
+}
+.tabs-title h5{
+	font-weight: 700;
+	font-size: 16px;
+}
+.tabs-title .title{
+	font-family: "Kalameh";	
+	color: #0063F7;
+}
+.comment img{
+	width: 35%;
+}
+.comment h3{
+	font-weight: 700;
+}
+.comment p{
+	font-size: 16px;
+}
+.comment label{
+	color: #222;
+    font-weight: 600;
+    font-size: 13px;
+}
+.comment .form-control{
+
+	padding: .9rem 1rem;
+	border-radius: 10px;
+}
+.comment .btn{
+	background-color: #1138F7;
+	font-size: 12px;
+	border-radius: 11px;
+	padding: .75rem 2rem;
+}
+.add-num{
+	background: #fff;
+	border-radius: 12px;
+	padding: 30px;
+}
+/*-------------------------------------------------------*/
+/* 8.footer
+/*-------------------------------------------------------*/
+
+.footer-add li img {
+	width: 35px;
+	padding-bottom: 15px;
+	padding-left: 10px;
+}
+
+.footer-add li .place-img {
+	width: 30px;
+}
+
+.footer-add li p span {
+	margin-right: 10px;
+	margin-left: 10px;
+	color: #244771;
+	font-weight: bold;
+}
+
+.right-dir {
+	direction: rtl;
+}
+
+.footer-bg {
+	background: #c7c9d9;
+}
+
+.footer-bg p {
+	color: #1c1c28;
+	font-size: 14px;
+}
+
+.txt-footer {
+	margin-right: 48px;
+}
+
+.img-insta {
+	margin-right: 53px;
+	margin-left: 29px;
+}
+
+.footer-bg img {
+	height: 20px;
+}
+
+.footer {
+	padding: 98px 0;
+	background-color: #f2f2f5;
+}
+
+.footer-col {
+	padding-right: 84px;
+	padding-left: 84px;
+}
+
+.footer-col p {
+	font-size: 14px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	text-align: right;
+	color: #1c1c28;
+	margin-top: 23px;
+}
+
+.footer ul li h6 {
+	font-size: 18px;
+	font-weight: bold;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	text-align: right;
+	color: #555770;
+}
+
+.footer ul li a {
+	text-decoration: none;
+	font-size: 14px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	text-align: right;
+	color: #1c1c28;
+	margin-top: 17px;
+	display: inline-block;
+}
+
+.nazarto-ul {
+	margin-top: 30px;
+}
+
+.links {
+	border-right: 1px solid #c7c9d9;
+	padding-right: 100px;
+}
