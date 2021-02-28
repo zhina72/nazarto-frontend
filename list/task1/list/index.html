@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>لیست</title>
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/all.min.css">
+      <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+      <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+      <link rel="stylesheet" href="css/style.css">
+   </head>
+   <body class="wrapper">
+     
+      <header>
+         <nav class="navbar navbar-expand-lg navbar-light right-dir">
+            <a class="navbar-brand mr-5" href="#"><img src="image/logo.png" class="img-fluid"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+               <ul class="navbar-nav">
+                  <li class="nav-item">
+                     <a class="nav-link nav-l link " href="#">لیست</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                     <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                       دسته بندی ها
+                       <i class="fa fa-angle-down"></i>
+                     </a>
+                     <div class="dropdown-menu text-right row " aria-labelledby="navbarDropdown">
+                        <div class="col-2">
+                           <a class="dropdown-item" href="#">موبایل</a>
+                           <ul class="px-4 mx-2">
+                              <li><a href="#">زیردسته1</a></li>
+                              <li><a href="#">زیردسته1</a></li>
+                           </ul>
+                        
+                           <a class="dropdown-item" href="#">موبایل</a>
+                           <ul class="px-4 mx-2">
+                              <li><a href="#">زیردسته1</a></li>
+                              <li><a href="#">زیردسته1</a></li>
+                              <li><a href="#">زیردسته1</a></li>
+                              <li><a href="#">زیردسته1</a></li>
+                              <li><a href="#">زیردسته1</a></li>
+                              <li><a href="#">زیردسته1</a></li>
+                           </ul>
+                        </div>
+                       
+                       <div class="col-2">
+                           <a class="dropdown-item" href="#">موبایل</a>
+                           <ul class="px-4 mx-2">
+                              <li><a href="#">زیردسته1</a></li>
+                              <li><a href="#">زیردسته1</a></li>
+                           </ul>
+                       </div>
+            
+                       
+                       
+                     </div>
+                   </li>
+                 
+               </ul>
+            </div>
+         </nav>
+      </header>
+      <div class="container-fluid main" id="main">
+         <div class="row justify-content-center right-dir">
+            <div class="col-7 text-right ">
+               <div class="row">
+                  <div class="col-10">
+                     <h1>تموم گجت ها رو برات <span class="green"> لیست </span>کردیم</h1>
+                     <p class="my-5">لیست بر اساس نظرات کاربران و مصرف کنندگان گجت ها اون ها را برات دسته بندی کرده و خیلی راحت میتونی به نظرات راجب به هر کدومشون دسترسی پیدا کنی </p>
+                     <div class="form-group col-9 d-flex px-0 search">
+                        <input type="search" placeholder="اسم محصول مورد نظرت…" class="form-control" />
+                     
+                        <button type="button" class="btn btn-search1">
+                           <i class="fas fa-search"></i>
+                        </button>
+                     </div>
+                  
+                  </div>
+               </div>
+            
+            </div>
+            <div class="col-5 d-flex right-dir search-img align-items-center">
+               <a href="#" class="search-link"><i class="fa fa-chevron-down"></i></a>
+               <div class="circle"></div>
+         
+               <div class="owl-carousel owl-theme owl-work">
+                  <div class="item"> 
+                    <div class="card pb-3 text-center">
+                       <img src="image/gt2.png" class="img-fluid">
+                       <p class="mb-2">xiaomi airdot 3</p>
+                       <a href="#">نظرات</a>
+                    </div> 
+                  </div>
+                  <div class="item"> 
+                     <div class="card pb-3 text-center">
+                        <img src="image/gt3.png" class="img-fluid">
+                        <p class="mb-2">xiaomi airdot 3</p>
+                        <a href="#">نظرات</a>
+                     </div> 
+                   </div>
+                   <div class="item"> 
+                     <div class="card pb-3 text-center">
+                        <img src="image/gt2.png" class="img-fluid">
+                        <p class="mb-2">xiaomi airdot 3</p>
+                        <a href="#">نظرات</a>
+                     </div> 
+                   </div>
+                   <div class="item"> 
+                     <div class="card pb-3 text-center">
+                        <img src="image/gt3.png" class="img-fluid">
+                        <p class="mb-2">xiaomi airdot 3</p>
+                        <a href="#">نظرات</a>
+                     </div> 
+                   </div>
+                 
+                </div>
+                
+         
+              
+            </div>
+         </div>
+      </div>
+
+      
+      <script src="js/jquery-3.4.1.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="owlcarousel/owl.carousel.min.js"></script>
+      <script>
+         $(document).ready(function(){
+            $(".owl-carousel").owlCarousel({
+              rtl:true,
+              margin:10,
+              loop:true,
+              dots:false,
+              autoplay:true,
+              autoplayTimeout:2000,
+              responsive:{
+          0:{
+              items:2
+          },
+          600:{
+              items:3
+          },
+          1000:{
+              items:3
+          }
+        }
+            });
+          });
+        </script>
+  
+
+   </body>
+</html>
