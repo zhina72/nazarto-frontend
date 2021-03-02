@@ -5,6 +5,8 @@
     2.Typography
 	3.Menu
 	4.Main
+	5.Comment
+	4.Category
     
 
     
@@ -223,6 +225,9 @@ span.green{
     color: #fff;
     text-decoration: none;
 }
+.search-link:hover{
+	color:#fff;
+}
 .search-link i{
 	font-size: 20px;
 }
@@ -329,3 +334,69 @@ margin-right: 10px;
     right: -150px;
     top: -100px
   }
+  /*-------------------------------------------------------*/
+/* 6.Category
+/*-------------------------------------------------------*/
+
+.category{
+	margin-top:150px;
+}
+.category h1{
+	padding-right: 70px;
+}
+.category .circle1{
+	width: 500px;
+    height: 500px;
+    background: #D9D9D9;
+    border-radius: 0 0 500px 0;
+    -moz-border-radius: 0 0 500px 0;
+    -webkit-border-radius: 0 0 500px 0;
+	position: absolute;
+	left:-40%;
+	top: 30%;
+	
+}
+.card-cat{
+	box-shadow: 1px 1px 10px #aaa;
+	border-radius: 2px;
+}
+.card-cat ul li .number{
+	width: 12%;
+	height: 12%;
+}
+.card-cat ul li .product{
+	width: 40%;
+	height: 40%;
+}
+.card-cat ul li span{
+	font-family: sans-serif;
+    font-weight: bold;
+	font-size: 13px;
+}
+
+.card-cat a{
+	display: inline-block;
+    background: #14dd82;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: auto;
+    padding-top: 7px;
+    padding-bottom: 5px;
+    font-size: 13px;
+}
+.card-cat a:hover{
+	color:#fff;
+}
+.link-cat {
+	margin:auto;
+}
+.link-cat .search-link{
+	padding: 20px 22px;
+}
+.link-cat .search-link i{
+ font-size: 22px;
+}
+.category-box{
+	margin-right: 50px;
+}
