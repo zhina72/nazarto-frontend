@@ -290,6 +290,33 @@ span.green{
 	padding: 40px 20px;
 }
 /*-------------------------------------------------------*/
-/* 7.resposive
+/* 5.Comment
 /*-------------------------------------------------------*/
+.owl-comment .item {
+	padding: 20px;
+}
+.owl-comment .item .item-com{
+box-shadow: 2px 2px 10px #aaa;
+border-radius: 7px;
+background:#fff;
+}
+.owl-comment .item .item-com h6{
+	font-size: 18px;
+	font-weight: bold;
+	font-family: sans-serif;
+}
+.owl-comment .item .item-com p{
+	font-size: 16px;
+    text-align: center;
+}
+.owl-comment .item .item-com img.smile{
+	max-width: 40px;
+    float: left;
+    margin-top: 30px;
+}
+.owl-comment .item .item-com img.product{
+margin-top: -10px;
+margin-right: 10px;
+}
+
 
