@@ -6,8 +6,8 @@
 	3.Menu
 	4.Main
 	5.Comment
-	6.Category
-	7.responsive
+	6.Footer
+	
     
 
     
@@ -19,9 +19,9 @@
 /*-------------------------------------------------------*/
 
 @font-face {
-	font-family: "IranianSans";
-	src: url('../fonts/IranianSans.eot');
-	src: url('../fonts/IranianSans.eot?#iefix') format('embedded-opentype'), url('../fonts/IranianSans.woff') format('woff'), url('../fonts/IranianSans.ttf') format('truetype');
+	font-family: "IRANYekan";
+	src: url('../fonts/IRANYekan.eot');
+	src: url('../fonts/IRANYekan.eot?#iefix') format('embedded-opentype'), url('../fonts/IRANYekan.woff') format('woff'), url('../fonts/IRANYekan.ttf') format('truetype');
 	font-weight: normal;
 }
 
@@ -38,7 +38,7 @@
 /*-------------------------------------------------------*/
 
 body {
-	font-family: IranianSans;
+	font-family: IRANYekan;
 	overflow-x: hidden;
 }
 
@@ -320,3 +320,101 @@ margin-right: 10px;
 }
 
 
+/*-------------------------------------------------------*/
+/* 6.Footer
+/*-------------------------------------------------------*/
+.logo-footer{
+	width: 17%;
+	border-radius: 30px;
+}
+.footer-add li img {
+	width: 35px;
+	padding-bottom: 15px;
+	padding-left: 10px;
+}
+
+.footer-add li .place-img {
+	width: 30px;
+}
+
+.footer-add li p span {
+	margin-right: 10px;
+	margin-left: 10px;
+	color: #244771;
+	font-weight: bold;
+}
+
+.right-dir {
+	direction: rtl;
+}
+
+.footer-bg {
+	background: #D9D9D9;
+}
+
+.footer-bg p {
+	font-size: 14px;
+}
+.footer-bg p a{
+	color: #000;
+	text-decoration: none;
+}
+
+.img-insta {
+	margin-left: 29px;
+}
+
+.footer {
+	padding: 30px 0 0;
+	background-color: #D9D9D9;
+}
+
+
+.footer-col p {
+	font-size: 14px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	text-align: center;
+	color: #1c1c28;
+}
+
+.footer ul li h6 {
+	font-size: 16px;
+	font-weight: bold;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	text-align: right;
+	color: #555770;
+}
+
+.footer ul li a {
+	text-decoration: none;
+	font-size: 14px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	text-align: right;
+	color: #1c1c28;
+	margin-bottom: 17px;
+	display: inline-block;
+}
+
+.list-ul {
+	margin-top: 16px;
+}
+.list-ul li{
+	font-size: 16px;
+}
+.links ul li a {
+	font-size: 16px;
+}
+.txt-footer{
+	border-top: 1px solid #222;
+}
